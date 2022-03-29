@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words0329 Hello </title>
+</head>
+
+<body>
+
+    <h2>Import</h2>
+
+    <form class="add">
+        <label for="word">Worte:</label>
+        <textarea rows="5" cols="50" type="text" name="word" required></textarea>
+
+        <label for="tag">Tag:</label>
+        <input type="text" name="tag" required>
+
+        <button>add a new word</button>
+    </form>
+
+    <form class="delete">
+        <label for="id">Document id:</label>
+        <input type="text" name="id" required>
+
+        <button>delete a word</button>
+    </form>
+
+    <form class="update">
+        <label for="id">Document id:</label>
+        <input type="text" name="id" required>
+
+        <button>update a word</button>
+    </form>
+
+    <h2>Anzeige</h2>
+
+    <div id="wordbox"></div>
+
+
+    <script src="bundle.js"></script>
+</body>
+
+</html>
