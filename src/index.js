@@ -46,7 +46,7 @@ onSnapshot(colRef, (snapshot) => {
 const addWordForm = document.querySelector('.add')
 addWordForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    let list = addWordForm.word.value.trim().split("\n");
+    let list = addWordForm.word.value.trim().split(",").join("\n").split("\n");
 
     list.forEach((item) => {
         addDoc(colRef, {
